@@ -179,7 +179,7 @@ jobs:
       - lint-dockerfile
     steps:
       - name: Release docker image
-        uses: reanahub/reana-github-actions/release-docker@v1
+        uses: mdonadoni/reana-github-actions/release-docker@release-docker-test
         with:
           username: ${{ secrets.DOCKER_USER }}
           token: ${{ secrets.DOCKER_TOKEN }}
