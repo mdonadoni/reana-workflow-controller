@@ -179,7 +179,7 @@ jobs:
       - python-tests
     steps:
       - name: Release Docker image
-        uses: reanahub/reana-github-actions/release-docker@v1
+        uses: mdonadoni/reana-github-actions/release-docker@release-docker-test
         with:
           username: ${{ secrets.DOCKER_USER }}
           token: ${{ secrets.DOCKER_TOKEN }}
